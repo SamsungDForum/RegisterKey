@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=1920"/>
+    <meta name="description" content="Register Keys"/>
+
+    <title>Register Keys</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>Register Keys Example</h1>
+
+
+
+    <div class="left">
+
+        <h2>Available buttons/actions:</h2>
+
+        <div>
+            Up - move select box up<br>
+            Down - move select box down<br>
+            Enter - toggle registration of selected key
+        </div>
+
+        <ul id='keys'>
+            <li id='ColorF0'>Red</li>
+            <li id='ColorF1'>Green</li>
+            <li id='ColorF2'>Yellow</li>
+            <li id='ColorF3'>Blue</li>
+        </ul>
+
+        <fieldset>
+            <legend>Logs: </legend>
+            <div class="logs" id="logs"></div>
+        </fieldset>
+
+    </div>
+
+    <div class="right">
+        <h2>Info</h2>
+
+        <p>This application demonstrates the process of registering and unregistering the keys handled by application</p>
+
+        <p>When the application is started out of color keys only the red key is registered. This means pressing these keys on remote does not send events to the application.</p>
+
+        <p>Some keys (arrows, volume up/down, channel up/down, enter, exit etc...) are always registered.</p>
+
+    </div>
+
+</body>
+</html>

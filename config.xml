@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets"
+        xmlns="http://www.w3.org/ns/widgets"
+        id="http://yourdomain/RegisterKeys"
+        version="1.1.0"
+        viewmodes="maximized">
+    <tizen:application id="demoapp022.RegisterKeys"
+                       package="demoapp022"
+                       required_version="2.3"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <icon src="icon.png"/>
+    <name>RegisterKeys</name>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <tizen:privilege name="http://tizen.org/privilege/mediacapture"/>
+    <tizen:profile name="tv"/>
+</widget>
