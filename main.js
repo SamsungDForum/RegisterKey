@@ -20,20 +20,6 @@
     }
 
     /**
-     * Register keys used in this application
-     */
-    function registerKeys() {
-        var usedKeys = ['1', '2', '3', '4', 'ColorF0Red'];
-
-        usedKeys.forEach(
-            function (keyName) {
-                tizen.tvinputdevice.registerKey(keyName);
-            }
-        );
-    }
-
-
-    /**
      * Handle input from remote
      */
     function registerKeyHandler() {
@@ -117,10 +103,8 @@
         }
 
         displayVersion();
-        registerKeys();
         registerKeyHandler();
-
-
+        
         keys.parent = document.getElementById('keys');
         keys.key = keys.parent.firstElementChild;
         keys.focus();
